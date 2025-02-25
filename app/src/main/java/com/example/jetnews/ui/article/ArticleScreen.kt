@@ -98,7 +98,6 @@ fun ArticleScreen(
                     IconButton(onClick = onBack) {
                         Icon(
                             imageVector = Icons.Filled.ArrowBack,
-                            // Step 4: Content descriptions
                             contentDescription = stringResource(
                                 R.string.cd_navigate_up
                             )
