@@ -165,7 +165,6 @@ private fun TopicItem(itemTitle: String, selected: Boolean, onToggle: () -> Unit
                     stateNotSubscribed
                 }
             }
-            // Step 7: Switches and Checkboxes
             .toggleable(
                 value = selected,
                 onValueChange = { _ -> onToggle() },
