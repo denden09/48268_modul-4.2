@@ -103,14 +103,13 @@ fun PostCardHistory(post: Post, navigateToArticle: (String) -> Unit) {
                 )
             },
             confirmButton = {
-                Text(
-                    text = stringResource(id = R.string.agree),
-                    style = MaterialTheme.typography.labelLarge,
-                    color = MaterialTheme.colorScheme.primary,
-                    modifier = Modifier
-                        .padding(15.dp)
-                        .clickable { openDialog = false }
-                )
+                TextButton(onClick = { openDialog = false }) {
+                    Text(
+                        text = stringResource(id = R.string.agree),
+                        style = MaterialTheme.typography.labelLarge,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                }
             }
         )
     }
@@ -123,7 +122,6 @@ fun PostCardPopular(
     modifier: Modifier = Modifier
 ) {
     val readArticleLabel = stringResource(id = R.string.action_read_article)
-
     Card(
         colors = CardDefaults.cardColors(),
         shape = MaterialTheme.shapes.medium,
