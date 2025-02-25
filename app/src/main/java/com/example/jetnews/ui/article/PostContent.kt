@@ -183,7 +183,6 @@ private fun Paragraph(paragraph: Paragraph) {
             ParagraphType.Header -> {
                 Text(
                     modifier = Modifier.padding(4.dp)
-                        // Step 5: Headings
                         .semantics { heading() },
                     text = annotatedString,
                     style = textStyle.merge(paragraphStyle)
