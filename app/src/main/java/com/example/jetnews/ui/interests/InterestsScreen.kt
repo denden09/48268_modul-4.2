@@ -157,7 +157,6 @@ private fun TopicItem(itemTitle: String, selected: Boolean, onToggle: () -> Unit
     val stateSubscribed = stringResource(R.string.state_subscribed)
     Row(
         modifier = Modifier
-            // Step 8: State descriptions
             .semantics {
                 stateDescription = if (selected) {
                     stateSubscribed
@@ -190,7 +189,6 @@ private fun TopicItem(itemTitle: String, selected: Boolean, onToggle: () -> Unit
         Spacer(Modifier.weight(1f))
         Checkbox(
             checked = selected,
-            // Step 7: Switches and Checkboxes
             onCheckedChange = null,
             modifier = Modifier.align(Alignment.CenterVertically)
         )
