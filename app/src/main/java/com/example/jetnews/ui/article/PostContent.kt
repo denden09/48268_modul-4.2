@@ -132,7 +132,6 @@ private fun PostHeaderImage(post: Post) {
 @Composable
 private fun PostMetadata(metadata: Metadata) {
     val typography = MaterialTheme.typography
-    // Step 6: Custom merging
     Row(Modifier.semantics(mergeDescendants = true) {}) {
         Image(
             imageVector = Icons.Filled.AccountCircle,
